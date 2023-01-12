@@ -30,8 +30,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 .header__body{
     display: flex;
     flex-wrap: wrap;
-
 }
+
+/*@media (max-width: 767px) {*/
+/*    .header__body{*/
+/*        padding-right: 50px;*/
+/*    }*/
+/*}*/
 .header__body__l{
     display: flex;
     flex: 1 1 auto;
@@ -42,6 +47,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 .header__left {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .hl__icon {
@@ -69,6 +75,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     flex: 1 1 auto;
     justify-content: space-around;
     align-items: center;
+}
+@media (max-width: 767px) {
+    .header__links{
+        display: none;
+    }
 }
 
 .header__linkk {
@@ -99,6 +110,91 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 .header__btn a{
     color: #fff;
 }
+
+.header__menu{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.mclose{
+    display: none;
+}
+
+.header__menu1{
+    background-color: #fff;
+    padding-left: 37px;
+    text-align: center;
+    display: none;
+}
+
+.mopen{
+    display: block;
+}
+
+@media (min-width: 767px) {
+    .header__menu{
+        display: none;
+    }
+}
+
+
+                  /*----------------popup__menu-----------*/
+
+.popup__menu {
+    display: none;
+}
+
+.active__menu{
+    display: block;
+}
+
+/*@media (min-width: 767px) {*/
+/*    .popup__menu{*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+.menu__body {
+    background-color: #333333;
+    padding-left: 25px;
+}
+
+.header__mlinkk {
+    font-size: 32px;
+    font-family: "Montserrat";
+    /*color: rgb(133, 133, 133);*/
+    line-height: 3.313;
+    border-bottom: 2px solid #3b3b3b;
+}
+
+.header__mlinkk a{
+    color: #ffffff;
+}
+
+.menu__follow {
+    font-size: 32px;
+    font-family: "Montserrat";
+    line-height: 3.313;
+}
+
+.menu__follow a{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.menu__network {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.men__net {
+    padding: 0 10px;
+}
+
+
 
                   /*---------------FORK------------------*/
 
@@ -689,7 +785,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 .fork1__item:hover{
     transform: scale(1.2, 1.2);
-    margin: 0 30px;
+    margin: 30px 30px;
     background-color: rgba(103, 91, 106, 0.2);
     width: 250px;
 }
@@ -1059,11 +1155,11 @@ p.ptitle {
     text-align: left;
 }
 
-.header__left {
+.fheader__left {
 }
 
-.hl__icon {
+.fhl__icon {
 }
 
-.hl__title {
+.fhl__title {
 }
