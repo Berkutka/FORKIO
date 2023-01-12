@@ -785,7 +785,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 .fork1__item:hover{
     transform: scale(1.2, 1.2);
-    margin: 30px 30px;
+    margin: 0 30px;
     background-color: rgba(103, 91, 106, 0.2);
     width: 250px;
 }
