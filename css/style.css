@@ -1156,10 +1156,21 @@ p.ptitle {
 }
 
 .fheader__left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .fhl__icon {
+    margin-right: 18px;
 }
 
 .fhl__title {
+    font-size: 24px;
+    font-family: "Lato";
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.667;
+    text-align: left;
 }
